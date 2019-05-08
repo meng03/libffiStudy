@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA8589112281789D0068FD47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8589102281789D0068FD47 /* main.m */; };
+		AA85892522817C560068FD47 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA85892122817C560068FD47 /* libffi.a */; };
+		AA85892B228275810068FD47 /* LibfiiStudy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA85892A228275810068FD47 /* LibfiiStudy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,20 @@
 /* Begin PBXFileReference section */
 		AA85890D2281789D0068FD47 /* libfiiStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libfiiStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8589102281789D0068FD47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA85891922817C560068FD47 /* ffi_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
+		AA85891A22817C560068FD47 /* ffi_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm.h; sourceTree = "<group>"; };
+		AA85891B22817C560068FD47 /* ffitarget_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm.h; sourceTree = "<group>"; };
+		AA85891C22817C560068FD47 /* ffi_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_common.h; sourceTree = "<group>"; };
+		AA85891D22817C560068FD47 /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		AA85891E22817C560068FD47 /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		AA85891F22817C560068FD47 /* ffitarget_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
+		AA85892022817C560068FD47 /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		AA85892122817C560068FD47 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
+		AA85892222817C560068FD47 /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		AA85892322817C560068FD47 /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		AA85892422817C560068FD47 /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		AA85892A228275810068FD47 /* LibfiiStudy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibfiiStudy.m; sourceTree = "<group>"; };
+		AA85892C228275AE0068FD47 /* LibfiiStudy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibfiiStudy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA85892522817C560068FD47 /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +74,39 @@
 		AA85890F2281789D0068FD47 /* libfiiStudy */ = {
 			isa = PBXGroup;
 			children = (
+				AA858929228275620068FD47 /* study */,
+				AA858917228178A70068FD47 /* libffi */,
 				AA8589102281789D0068FD47 /* main.m */,
 			);
 			path = libfiiStudy;
+			sourceTree = "<group>";
+		};
+		AA858917228178A70068FD47 /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				AA85891A22817C560068FD47 /* ffi_arm.h */,
+				AA85892322817C560068FD47 /* ffi_arm64.h */,
+				AA85891C22817C560068FD47 /* ffi_common.h */,
+				AA85891922817C560068FD47 /* ffi_i386.h */,
+				AA85892422817C560068FD47 /* ffi_x86_64.h */,
+				AA85891D22817C560068FD47 /* ffi.h */,
+				AA85891B22817C560068FD47 /* ffitarget_arm.h */,
+				AA85891E22817C560068FD47 /* ffitarget_arm64.h */,
+				AA85891F22817C560068FD47 /* ffitarget_i386.h */,
+				AA85892022817C560068FD47 /* ffitarget_x86_64.h */,
+				AA85892222817C560068FD47 /* ffitarget.h */,
+				AA85892122817C560068FD47 /* libffi.a */,
+			);
+			path = libffi;
+			sourceTree = "<group>";
+		};
+		AA858929228275620068FD47 /* study */ = {
+			isa = PBXGroup;
+			children = (
+				AA85892A228275810068FD47 /* LibfiiStudy.m */,
+				AA85892C228275AE0068FD47 /* LibfiiStudy.h */,
+			);
+			path = study;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA85892B228275810068FD47 /* LibfiiStudy.m in Sources */,
 				AA8589112281789D0068FD47 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +289,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VKELUV868;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libfiiStudy/libffi",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,6 +302,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5VKELUV868;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libfiiStudy/libffi",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

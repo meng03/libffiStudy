@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "study/LibfiiStudy.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+    @autoreleasepool {        
+        [[[ClosureStudy alloc] init] closureTest];
     }
     return 0;
 }
